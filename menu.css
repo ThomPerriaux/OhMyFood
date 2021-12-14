@@ -29,7 +29,7 @@ header {
   justify-content: space-around;
   align-items: center;
 }
-header .gotoindex i {
+header i {
   font-size: 4vw;
 }
 header .logo__header {
