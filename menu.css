@@ -24,17 +24,19 @@ a:visited {
 header {
   display: flex;
   flex-direction: row;
-  width: 50%;
-  margin: auto;
+  width: 95%;
+  margin: 10px auto;
   justify-content: space-around;
   align-items: center;
 }
-header .logo__header {
-  font-family: "Shrikhand", Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 8vw;
+header .gotoindex i {
+  font-size: 4vw;
 }
-header .logo__header span {
-  display: block;
+header .logo__header {
+  width: 80%;
+  margin: auto;
+  font-family: "Shrikhand", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 7vw;
   text-align: center;
 }
 

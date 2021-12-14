@@ -21,10 +21,7 @@ main a {
   width: 80%;
   margin: auto;
   font-family: "Shrikhand", Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 6vw;
-}
-.logo__header p {
-  display: block;
+  font-size: 7vw;
   text-align: center;
 }
 
@@ -40,7 +37,11 @@ main a {
   margin: auto;
 }
 .position p {
-  margin-left: 10px;
+  margin-left: 20px;
+  font-size: 4vw;
+}
+.position i {
+  font-size: 4vw;
 }
 
 .explore {
