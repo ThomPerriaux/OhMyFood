@@ -102,22 +102,10 @@ main a {
   position: relative;
   box-shadow: #BEC0BD 1px 3px 6px;
 }
-.fonctionnement .fonctionnement__btn--pink {
+.fonctionnement .fonctionnement__btn:hover {
   background-color: #F3E8FF;
-  width: 100%;
-  margin: auto;
-  border: none;
-  height: 70px;
-  border-radius: 15px;
-  margin-top: 10px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  position: relative;
-  box-shadow: #BEC0BD 1px 3px 6px;
 }
-.fonctionnement .fonctionnement__btn--pink i {
+.fonctionnement .fonctionnement__btn:hover i {
   color: #7F3AD4;
 }
 .fonctionnement .fonctionnement__btn__step {
@@ -134,7 +122,7 @@ main a {
   color: white;
   position: absolute;
   top: 2px;
-  left: 8px;
+  left: 6px;
 }
 .fonctionnement .titre_btn {
   width: 90%;
@@ -218,6 +206,12 @@ main a {
 }
 .restaurants .restaurants__details .restaurants__name {
   font-weight: bolder;
+}
+.restaurants .restaurants__details .icone__like:active {
+  color: #7F3AD4;
+}
+.restaurants .restaurants__details .icone__like:hover {
+  color: #7F3AD4;
 }
 
 footer {

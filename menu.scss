@@ -1,0 +1,160 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+/*MiniReset*/
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
+body{
+    font-family: 'Roboto',Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+    font-weight: bolder;
+}
+
+main a{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    color: inherit;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin: 10px auto;
+    justify-content: space-around;
+    align-items: center;
+        i{
+            font-size: 4vw;
+        }
+
+    .logo__header{
+        width: 80%;
+        margin: auto;
+        font-family: 'Shrikhand',Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 7vw;
+        text-align: center;
+        }
+}
+
+.restaurant_picture{
+   width: 100%;
+   z-index: -1;
+   position: relative;
+    img{
+    object-fit: cover;
+    width: 100%;
+    height: 350px;
+    }
+}
+
+main{
+    border-radius: 50px 50px 0 0 ;
+    background-color: #f4f4f4;
+    margin-top: -70px;
+    padding-top: 40px;
+    .main__title{
+        font-family: 'Shrikhand',Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 7vw;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.course{
+    width: 95%;
+    margin: auto;
+    .course__title{
+        text-transform: uppercase;
+        font-family: 'Roboto',Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: lighter;
+        margin-top: 40px;
+    }
+    .course__title__underline{
+        border-bottom: 5px solid #99E2D0;
+        width: 10%;
+        margin-bottom: 10px;
+    }
+}
+
+.course__card
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .dish{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        box-shadow: #BEC0BD 1px 3px 6px;
+        border-radius: 15px;
+        padding:15px ;
+        width: 100%;
+        margin: 10px auto;
+        .dish__name{
+            font-weight: bolder;
+        }
+        .dish__rate{
+            font-weight: bolder;
+        }
+    }
+}
+
+.dish_anim{
+    display: none;
+}
+
+.order_button{
+text-align: center;
+    .explore__order__btn
+    {
+        width: 45%;
+        height: 50px;
+        margin: 40px auto;
+        background: linear-gradient(#FF79DA,#9356dc);
+        color: ivory;
+        border: none;
+        border-radius: 25px;
+        font-size: 3.5vw;
+        box-shadow: #BEC0BD 1px 3px 6px;        
+    }
+    .explore__order__btn:hover{
+        filter: brightness(1.10);
+        box-shadow:#3b3b3a 2px 3px 6px; 
+    }
+}
+
+footer{
+    color: white;
+    background-color:#282828;
+    padding: 20px 20px;
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    .logo__footer{
+    font-family: 'Shrikhand',Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+    }
+    .footer__menu{
+        li{
+            line-height: 25px;
+            i{
+                margin-right: 10px;
+            }
+        }
+
+    }
+}
