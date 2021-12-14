@@ -74,6 +74,10 @@ main a {
   font-size: 3.5vw;
   box-shadow: #BEC0BD 1px 3px 6px;
 }
+.explore .explore__order__btn:hover {
+  filter: brightness(1.1);
+  box-shadow: #3b3b3a 2px 3px 6px;
+}
 
 .fonctionnement {
   display: flex;
