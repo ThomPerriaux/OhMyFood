@@ -207,12 +207,6 @@ main a {
 .restaurants .restaurants__details .restaurants__name {
   font-weight: bolder;
 }
-.restaurants .restaurants__details .icone__like:active {
-  color: #7F3AD4;
-}
-.restaurants .restaurants__details .icone__like:hover {
-  color: #7F3AD4;
-}
 
 footer {
   color: white;

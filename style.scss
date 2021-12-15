@@ -5,6 +5,7 @@
 /*MiniReset*/
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 
+
 body
 {
     font-family: 'Roboto',Verdana, Geneva, Tahoma, sans-serif;
@@ -13,6 +14,7 @@ body
 h2{
     font-weight: bolder;
 }
+
 
 main a{
     text-decoration: none;
@@ -80,7 +82,7 @@ main a{
 
     .explore__order__btn:hover{
         filter: brightness(1.10);
-        box-shadow:#3b3b3a 2px 3px 6px; 
+        box-shadow:#3b3b3a 2px 3px 6px;
     }
 }
 
@@ -211,12 +213,6 @@ main a{
         border-radius: 0 0 15px 15px;
         .restaurants__name{
         font-weight: bolder;
-        }
-        .icone__like:active{
-            color: #7F3AD4;
-        }
-        .icone__like:hover{
-            color: #7F3AD4;
         }
     }
 }
