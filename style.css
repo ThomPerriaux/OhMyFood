@@ -10,6 +10,7 @@ body {
 
 h2 {
   font-weight: bolder;
+  font-size: 6vw;
 }
 
 main a {
@@ -19,7 +20,7 @@ main a {
 
 .logo__header {
   width: 80%;
-  margin: auto;
+  margin: 10px auto;
   font-family: "Shrikhand", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 7vw;
   text-align: center;
@@ -49,31 +50,29 @@ main a {
   flex-direction: column;
   text-align: center;
   background-color: #F4F4F4;
-  padding-top: 40px;
-  padding-bottom: 40px;
 }
 .explore .explore__header {
   font-size: 6vw;
   font-weight: bolder;
-  width: 80%;
-  margin: auto;
+  width: 60%;
+  margin: 20px auto;
 }
 .explore .explore__text {
   font-size: 4vw;
-  width: 80%;
+  width: 70%;
   margin: 10px auto 30px;
 }
 .explore .explore__order__btn {
   width: 55%;
-  height: 50px;
+  height: 10vw;
   margin: auto;
   background: linear-gradient(#FF79DA, #9356dc);
   color: ivory;
   border: none;
-  border-radius: 25px;
+  border-radius: 5vw;
   margin-bottom: 10px;
   font-size: 3.5vw;
-  box-shadow: #BEC0BD 1px 3px 6px;
+  box-shadow: #BEC0BD 0vw 1.5vw 1.5vw;
 }
 .explore .explore__order__btn:hover {
   filter: brightness(1.1);
@@ -90,10 +89,9 @@ main a {
 .fonctionnement .fonctionnement__btn {
   width: 100%;
   margin: auto;
-  border: none;
-  height: 70px;
-  border-radius: 15px;
-  margin-top: 10px;
+  height: 17vw;
+  border-radius: 3.8vw;
+  margin-top: 20px;
   background-color: #F4F4F4;
   display: flex;
   flex-direction: row;
@@ -136,10 +134,11 @@ main a {
   padding-left: 10px;
 }
 .fonctionnement .titre_btn .icone_btn i {
-  font-size: 25px;
+  font-size: 6vw;
 }
 .fonctionnement .titre_btn .fonctionnement__btn__legende {
-  font-size: 16px;
+  font-size: 4vw;
+  font-weight: bold;
 }
 
 .restaurants {
