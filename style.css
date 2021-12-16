@@ -65,14 +65,14 @@ main a {
 .explore .explore__order__btn {
   width: 55%;
   height: 10vw;
-  margin: auto;
+  margin: 0 auto 70px auto;
   background: linear-gradient(#FF79DA, #9356dc);
   color: ivory;
   border: none;
   border-radius: 5vw;
-  margin-bottom: 10px;
   font-size: 3.5vw;
   box-shadow: #BEC0BD 0vw 1.5vw 1.5vw;
+  cursor: pointer;
 }
 .explore .explore__order__btn:hover {
   filter: brightness(1.1);

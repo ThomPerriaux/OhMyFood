@@ -91,7 +91,8 @@ main .main__title {
   justify-content: space-between;
   align-items: center;
 }
-.course__card .dish {
+
+.dish {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -102,10 +103,10 @@ main .main__title {
   width: 100%;
   margin: 10px auto;
 }
-.course__card .dish .dish__name {
+.dish .dish__name {
   font-weight: bolder;
 }
-.course__card .dish .dish__rate {
+.dish .dish__rate {
   font-weight: bolder;
 }
 
@@ -126,6 +127,7 @@ main .main__title {
   border-radius: 25px;
   font-size: 3.5vw;
   box-shadow: #BEC0BD 1px 3px 6px;
+  cursor: pointer;
 }
 .order_button .explore__order__btn:hover {
   filter: brightness(1.1);
