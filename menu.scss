@@ -6,7 +6,6 @@
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 
 /*keyframes apparitions plats*/
-
 @keyframes DishScreening {
     0%{
         opacity: 0;
@@ -21,9 +20,6 @@
         opacity:1;
     }
 }
-
-
-
 
 body{
     font-family: 'Roboto',Verdana, Geneva, Tahoma, sans-serif;
@@ -137,17 +133,14 @@ main{
 }
 
 .course__card__plat{
-    /*keyframes apparitions plats*/
+    /*keyframes apparitions plats -- delais*/
     animation-delay: 0.30s;
 }
 
 .course__card__dessert{
-     /*keyframes apparitions plats*/
+     /*keyframes apparitions plats -- delai*/
     animation-delay: 0.60s;
 }
-
-
-
 
 .dish_anim{
     display: none;

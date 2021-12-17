@@ -137,13 +137,13 @@ main .main__title {
 }
 
 .course__card__plat {
-  /*keyframes apparitions plats*/
+  /*keyframes apparitions plats -- delais*/
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
 }
 
 .course__card__dessert {
-  /*keyframes apparitions plats*/
+  /*keyframes apparitions plats -- delai*/
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
