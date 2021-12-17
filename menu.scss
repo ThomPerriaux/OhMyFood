@@ -5,6 +5,26 @@
 /*MiniReset*/
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 
+/*keyframes apparitions plats*/
+
+@keyframes DishScreening {
+    0%{
+        opacity: 0;
+        transform: translateY(60px);
+    }
+
+    10%{
+        transform: translateY(60px);
+    }
+
+    100%{
+        opacity:1;
+    }
+}
+
+
+
+
 body{
     font-family: 'Roboto',Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -93,8 +113,9 @@ main{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    }
- 
+    animation: DishScreening 2s;
+
+     
     .dish{
         display: flex;
         flex-direction: row;
@@ -105,6 +126,7 @@ main{
         padding:15px ;
         width: 100%;
         margin: 10px auto;
+
         .dish__name{
             font-weight: bolder;
         }
@@ -113,6 +135,19 @@ main{
         }
     }
 }
+
+.course__card__plat{
+    /*keyframes apparitions plats*/
+    animation-delay: 0.30s;
+}
+
+.course__card__dessert{
+     /*keyframes apparitions plats*/
+    animation-delay: 0.60s;
+}
+
+
+
 
 .dish_anim{
     display: none;

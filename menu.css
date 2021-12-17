@@ -4,6 +4,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 /*MiniReset*/
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+/*keyframes apparitions plats*/
+@-webkit-keyframes DishScreening {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  10% {
+    transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes DishScreening {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  10% {
+    transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
 body {
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -90,9 +115,10 @@ main .main__title {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  -webkit-animation: DishScreening 2s;
+          animation: DishScreening 2s;
 }
-
-.dish {
+.course__card .dish {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -103,11 +129,23 @@ main .main__title {
   width: 100%;
   margin: 10px auto;
 }
-.dish .dish__name {
+.course__card .dish .dish__name {
   font-weight: bolder;
 }
-.dish .dish__rate {
+.course__card .dish .dish__rate {
   font-weight: bolder;
+}
+
+.course__card__plat {
+  /*keyframes apparitions plats*/
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.course__card__dessert {
+  /*keyframes apparitions plats*/
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 
 .dish_anim {
