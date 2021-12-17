@@ -5,6 +5,7 @@
 /*MiniReset*/
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 
+
 body
 {
     font-family: 'Roboto',Verdana, Geneva, Tahoma, sans-serif;
@@ -19,6 +20,7 @@ main a{
     text-decoration: none;
     color: black;
 }
+
 
 .logo__header{
     width: 80%;
@@ -68,14 +70,14 @@ main a{
     {
         width: 55%;
         height: 10vw;
-        margin: auto;
+        margin: 0 auto 70px auto;
         background: linear-gradient(#FF79DA,#9356dc);
         color: ivory;
         border: none;
         border-radius: 5vw;
-        margin-bottom: 10px;
         font-size: 3.5vw;
         box-shadow: #BEC0BD 0vw 1.5vw 1.5vw;
+        cursor: pointer;
     }
 
     .explore__order__btn:hover{
