@@ -25,6 +25,21 @@
     }
 }
 
+@keyframes DishScreening {
+    0%{
+        opacity: 0;
+        transform: translateY(60px);
+    }
+
+    10%{
+        transform: translateY(60px);
+    }
+
+    100%{
+        opacity:1;
+    }
+}
+
 body{
     font-family: 'Roboto',Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -120,6 +135,17 @@ main{
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    animation: DishScreening 2s;
+}
+
+.course__card__plats{
+    /*keyframes apparitions plats*/
+    animation-delay: 0.30s;
+}
+
+.course__card__desserts{
+     /*keyframes apparitions plats*/
+    animation-delay: 0.60s;
 }
 
 .dish__displayed{
