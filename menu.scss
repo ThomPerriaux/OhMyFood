@@ -11,17 +11,17 @@
     }
 
     100%{
-        width: 15%;
+        width: 20%;
     }
 }
 
 @keyframes rotation {
     0%{
-        rotate: 0turn;
-    }
+        transform: rotate(180deg);
+        }
     
     100%{
-        rotate: 1turn;
+        transform: rotate(360deg);
     }
 }
 
@@ -30,7 +30,7 @@ body{
 }
 
 h2{
-    font-weight: bolder;
+    font-size: 4vw;
 }
 
 main a{
@@ -96,7 +96,6 @@ main{
     .course__title{
         text-transform: uppercase;
         font-family: 'Roboto',Verdana, Geneva, Tahoma, sans-serif;
-        font-weight: lighter;
         margin-top: 40px;
     }
     .course__title__underline{
@@ -107,81 +106,89 @@ main{
 }
 
 .course__card{
+    width: 100%;
+    height: 70px;
+    border-radius:20px;
+    margin-top: 20px;
+    background-color:#F4F4F4;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     box-shadow: #BEC0BD 1px 3px 6px;
-    border-radius: 15px;
-    width: 100%;
-    height: 12vw;
-    margin: 10px auto;
     cursor: pointer;
-    }
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
 
-    .dish__displayed{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
-
+.dish__displayed{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+}
     .dish__desc{
-        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width:70%;
+        margin-left: 10px;
         .dish__name{
             font-weight: bolder;
+            font-size:20px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            margin-bottom: 5px;
+        }
+        .dish__aside{
+            font-size: 15px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
     }
-
     .dish__rate{
+        display: flex;
+        align-items: flex-end;
         font-weight: bolder;
-    }
+        margin-right: 10px;
+        }
 
     .dish_anim{
-        display: none;
-        background-color: #99E2D0;
-        width: 15%;
-        height: 12vw;
-        border-radius: 0 15px 15px 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        }
-                
+    width: 25%;
+    height: 100px;
+    background-color: #99E2D0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    animation: CourseSelection 3s;
+    display: none;
         .icone_container{
-        display: none;
-        background-color: #f4f4f4;
-        width: 6vw;
-        height: 6vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        i{
-        display: none;
-        color: #99E2D0;
-        font-size: 4vw;
+        background-color: white;
+        border-radius: 50%;        
+            i{
+            padding:3vw;
+            color: #99E2D0;
+            animation: rotation 2s 0.5s;
+            }
         }
     }
 
-
     .course__card:hover{
-        padding:15px 0 15px 15px;
-
         .dish_anim{
-        display: initial;
-        animation: CourseSelection 2s;
+            display: inherit;
         }
-    
     }
 
 .order_button{
 text-align: center;
     .explore__order__btn
     {
-        width: 45%;
+        width: 55%;
         height: 50px;
         margin: 40px auto;
         background: linear-gradient(#FF79DA,#9356dc);
