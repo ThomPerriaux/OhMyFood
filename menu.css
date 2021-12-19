@@ -4,29 +4,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 /*MiniReset*/
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
-/*keyframes apparitions plats*/
-@-webkit-keyframes DishScreening {
+@-webkit-keyframes CourseSelection {
   0% {
-    opacity: 0;
-    transform: translateY(60px);
-  }
-  10% {
-    transform: translateY(60px);
+    width: 0%;
   }
   100% {
-    opacity: 1;
+    width: 20%;
   }
 }
-@keyframes DishScreening {
+@keyframes CourseSelection {
   0% {
-    opacity: 0;
-    transform: translateY(60px);
-  }
-  10% {
-    transform: translateY(60px);
+    width: 0%;
   }
   100% {
-    opacity: 1;
+    width: 20%;
+  }
+}
+@-webkit-keyframes rotation {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 body {
@@ -34,7 +41,7 @@ body {
 }
 
 h2 {
-  font-weight: bolder;
+  font-size: 4vw;
 }
 
 main a {
@@ -101,7 +108,6 @@ main .main__title {
 .course .course__title {
   text-transform: uppercase;
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: lighter;
   margin-top: 40px;
 }
 .course .course__title__underline {
@@ -111,52 +117,91 @@ main .main__title {
 }
 
 .course__card {
+  width: 100%;
+  height: 70px;
+  border-radius: 20px;
+  margin-top: 20px;
+  background-color: #F4F4F4;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  -webkit-animation: DishScreening 2s;
-          animation: DishScreening 2s;
+  box-shadow: #BEC0BD 1px 3px 6px;
+  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-.course__card .dish {
+
+.dish__displayed {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 95%;
+  margin: auto;
+}
+
+.dish__desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  margin-left: 10px;
+}
+.dish__desc .dish__name {
+  font-weight: bolder;
+  font-size: 20px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.dish__desc .dish__aside {
+  font-size: 15px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.dish__rate {
+  display: flex;
   align-items: flex-end;
-  box-shadow: #BEC0BD 1px 3px 6px;
-  border-radius: 15px;
-  padding: 15px;
-  width: 100%;
-  margin: 10px auto;
-}
-.course__card .dish .dish__name {
   font-weight: bolder;
-}
-.course__card .dish .dish__rate {
-  font-weight: bolder;
-}
-
-.course__card__plat {
-  /*keyframes apparitions plats -- delais*/
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
-}
-
-.course__card__dessert {
-  /*keyframes apparitions plats -- delai*/
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  margin-right: 10px;
 }
 
 .dish_anim {
+  width: 25%;
+  height: 100px;
+  background-color: #99E2D0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  -webkit-animation: CourseSelection 3s;
+          animation: CourseSelection 3s;
   display: none;
+}
+.dish_anim .icone_container {
+  background-color: white;
+  border-radius: 50%;
+}
+.dish_anim .icone_container i {
+  padding: 3vw;
+  color: #99E2D0;
+  -webkit-animation: rotation 2s 0.5s;
+          animation: rotation 2s 0.5s;
+}
+
+.course__card:hover .dish_anim {
+  display: inherit;
 }
 
 .order_button {
   text-align: center;
 }
 .order_button .explore__order__btn {
-  width: 45%;
+  width: 55%;
   height: 50px;
   margin: 40px auto;
   background: linear-gradient(#FF79DA, #9356dc);
