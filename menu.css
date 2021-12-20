@@ -1,15 +1,17 @@
+@charset "UTF-8";
 /*fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 /*MiniReset*/
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+/*Apparition coche à droite du plat*/
 @-webkit-keyframes CourseSelection {
   0% {
     width: 0%;
   }
   100% {
-    width: 20%;
+    width: 25%;
   }
 }
 @keyframes CourseSelection {
@@ -17,9 +19,10 @@
     width: 0%;
   }
   100% {
-    width: 20%;
+    width: 25%;
   }
 }
+/*Apparition coche à droite du plat*/
 @-webkit-keyframes rotation {
   0% {
     transform: rotate(180deg);
@@ -36,12 +39,14 @@
     transform: rotate(360deg);
   }
 }
+/*Apparition progressive des plats*/
 @-webkit-keyframes DishScreening {
   0% {
     opacity: 0;
     transform: translateY(60px);
   }
   10% {
+    opacity: 0;
     transform: translateY(60px);
   }
   100% {
@@ -54,6 +59,7 @@
     transform: translateY(60px);
   }
   10% {
+    opacity: 0;
     transform: translateY(60px);
   }
   100% {
@@ -75,6 +81,7 @@ main a {
 
 a:visited {
   color: inherit;
+  /*inherit from parent*/
 }
 
 header {
@@ -99,6 +106,7 @@ header .logo__header {
 .restaurant_picture {
   width: 100%;
   z-index: -1;
+  /*positionner en arriere plan du main*/
   position: relative;
 }
 .restaurant_picture img {
@@ -109,10 +117,12 @@ header .logo__header {
 }
 
 main {
+  width: 100%;
   border-radius: 50px 50px 0 0;
   background-color: #f4f4f4;
   margin-top: -70px;
   padding-top: 40px;
+  position: absolute;
 }
 main .main__title {
   font-family: "Shrikhand", Verdana, Geneva, Tahoma, sans-serif;
@@ -135,6 +145,7 @@ main .main__title {
   margin-top: 40px;
 }
 .course .course__title__underline {
+  /*trait vert sous la catégorie du plat*/
   border-bottom: 5px solid #99E2D0;
   width: 10%;
   margin-bottom: 10px;
@@ -153,6 +164,7 @@ main .main__title {
   box-shadow: #BEC0BD 1px 3px 6px;
   cursor: pointer;
   white-space: nowrap;
+  /*sequence apparition ... lorsque coche apparait*/
   text-overflow: ellipsis;
   overflow: hidden;
   -webkit-animation: DishScreening 2s;
@@ -177,6 +189,7 @@ main .main__title {
   justify-content: space-between;
   width: 95%;
   margin: auto;
+  margin-left: 10px;
 }
 
 .dish__desc {

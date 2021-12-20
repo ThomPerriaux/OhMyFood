@@ -4,8 +4,129 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 /*MiniReset*/
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+@-webkit-keyframes loading {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  25% {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  75% {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+}
+@keyframes loading {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  25% {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  75% {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes main_page {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes main_page {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 body {
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main_page {
+  opacity: 1;
+  -webkit-animation: main_page 5s;
+          animation: main_page 5s;
+}
+
+.loader {
+  /*crea loader*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 35vw;
+  height: 35vw;
+  /*arrondi*/
+  border-top: #7F3AD4 solid 10px;
+  border-right: #8ADDC6 solid 10px;
+  border-bottom: #7F3AD4 solid 10px;
+  border-left: #8ADDC6 solid 10px;
+  border-radius: 50%;
+  /*position*/
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-animation: loading 3s;
+          animation: loading 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  /*mise en forme texte*/
+  /*mise en forme icone*/
+}
+.loader p {
+  font-size: 5.5vw;
+  text-align: center;
+  font-family: "Shrikhand", Verdana, Geneva, Tahoma, sans-serif;
+}
+.loader i {
+  font-size: 7vw;
 }
 
 h2 {
