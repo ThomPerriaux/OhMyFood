@@ -228,8 +228,8 @@ main a {
   color: #7F3AD4;
 }
 .fonctionnement .fonctionnement__btn__step {
-  width: 25px;
-  height: 25px;
+  width: 7vw;
+  height: 7vw;
   border: #7F3AD4 solid 1px;
   background-color: #7F3AD4;
   border-radius: 50%;
@@ -240,8 +240,9 @@ main a {
 .fonctionnement .fonctionnement__btn__step p {
   color: white;
   position: absolute;
-  top: 2px;
-  left: 6px;
+  top: 0.5vw;
+  left: 2vw;
+  font-size: 4.5vw;
 }
 .fonctionnement .titre_btn {
   width: 90%;
@@ -346,4 +347,57 @@ footer .footer__menu li {
 }
 footer .footer__menu li i {
   margin-right: 10px;
+}
+
+/*TABLETTES DESKTOP*/
+@media all and (min-width: 768px) {
+  .fonctionnement__header {
+    margin: auto;
+  }
+
+  .fonctionnement .fonctionnement__btn__step p {
+    top: 0.6vw;
+    font-size: 5vw;
+  }
+
+  .restaurants .restaurants__header {
+    width: 30%;
+  }
+  .restaurants .restaurants__cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .restaurants .restaurants__vignette {
+    width: 40%;
+  }
+  .restaurants .restaurants__pic .restaurants__image {
+    height: 300px;
+  }
+  .restaurants .restaurants__pic .banner__new {
+    width: 10vw;
+    height: 3vw;
+    padding-top: 0.5vw;
+  }
+  .restaurants .restaurants__pic p {
+    font-size: 2vw;
+  }
+  .restaurants .restaurants__details .restaurants__name {
+    font-weight: bolder;
+    font-size: 4vw;
+  }
+  .restaurants .restaurants__details .icone__like {
+    font-size: 3vw;
+    cursor: pointer;
+  }
+
+  .logo__footer {
+    text-align: center;
+    font-size: 4vw;
+    margin-bottom: 20px;
+  }
+
+  .footer__menu {
+    text-align: center;
+    font-size: 2vw;
+  }
 }/*# sourceMappingURL=style.css.map */

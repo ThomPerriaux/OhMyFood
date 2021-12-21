@@ -206,8 +206,8 @@ main a{
     }
 
     .fonctionnement__btn__step{
-        width: 25px;
-        height: 25px;
+        width: 7vw;
+        height: 7vw;
         border: #7F3AD4 solid 1px;
         background-color: #7F3AD4;
         border-radius: 50%;
@@ -217,8 +217,9 @@ main a{
         p{
             color: white;
             position: absolute;
-            top: 2px;
-            left: 6px;
+            top: .5vw;
+            left: 2vw;
+            font-size: 4.5vw;
         }
     }
     .titre_btn
@@ -329,11 +330,63 @@ footer{
 
     }
 }
+/*TABLETTES DESKTOP*/
+@media all and (min-width:768px) {
 
+    .fonctionnement__header{
+        margin: auto;
+    }
 
+     .fonctionnement .fonctionnement__btn__step{
+        p{
+            top: .6vw;
+            font-size: 5vw;
+        }
+    }
+    .restaurants{
+    .restaurants__header{
+        width: 30%;
+    }
+    .restaurants__cards{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .restaurants__vignette{
+    width: 40%;
+    }
+    .restaurants__pic{
+        .restaurants__image{
+        height: 300px;
+        }
+        .banner__new{
+            width: 10vw;
+            height: 3vw;
+            padding-top: 0.5vw;
+        }
+        p{
+            font-size: 2vw;
+        }
+    }
+    .restaurants__details{
+        .restaurants__name{
+        font-weight: bolder;
+        font-size: 4vw;
+        }
+        .icone__like{
+            font-size: 3vw;
+            cursor: pointer;
+        }
+    }
+}
+    .logo__footer{
+    text-align: center;
+    font-size: 4vw;
+    margin-bottom: 20px;
+    }
 
-
-
-
-
+    .footer__menu{
+        text-align: center;
+        font-size: 2vw;
+    }
+}
 
