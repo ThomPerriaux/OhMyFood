@@ -54,7 +54,7 @@ main a{
     text-decoration: none;
     color: black;
 }
-
+ 
 a:visited{
     color: inherit; /*inherit from parent*/
 }
@@ -96,7 +96,6 @@ main{
     background-color: #f4f4f4;
     margin-top: -70px;
     padding-top: 40px;
-    position: absolute;
     .main__title{
         font-family: 'Shrikhand',Verdana, Geneva, Tahoma, sans-serif;
         font-size: 7vw;
@@ -258,3 +257,6 @@ footer{
 
     }
 }
+
+
+
