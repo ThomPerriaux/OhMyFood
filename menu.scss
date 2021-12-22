@@ -41,6 +41,13 @@
         opacity:1;
     }
 }
+/*variables couleurs*/
+:root{
+    --violet:#9356DC;
+    --rose:#FF79DA;
+    --vert:#99E2D0;
+}
+
 
 body{
     font-family: 'Roboto',Verdana, Geneva, Tahoma, sans-serif;
@@ -117,7 +124,7 @@ main{
         margin-top: 40px;
     }
     .course__title__underline{ /*trait vert sous la catégorie du plat*/
-        border-bottom: 5px solid #99E2D0;
+        border-bottom: 5px solid var(--vert);
         width: 10%;
         margin-bottom: 10px;
     }
@@ -190,7 +197,7 @@ main{
     .dish_anim{
     width: 25%;
     height: 100px;
-    background-color: #99E2D0;
+    background-color: var(--vert);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -221,7 +228,7 @@ text-align: center;
         width: 55%;
         height: 50px;
         margin: 40px auto;
-        background: linear-gradient(#FF79DA,#9356dc);
+        background: linear-gradient( var(--rose) , var(--violet));
         color: ivory;
         border: none;
         border-radius: 25px;
