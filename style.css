@@ -334,6 +334,42 @@ main a {
 }
 .restaurants .restaurants__details .restaurants__name {
   font-weight: bolder;
+  font-size: 3vw;
+}
+
+@-webkit-keyframes like {
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+@keyframes like {
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+.icone__like .like {
+  display: none;
+  color: var(--rose);
+}
+
+.icone__like:hover .neutral {
+  display: none;
+}
+.icone__like:hover .like {
+  display: unset;
+  -webkit-animation: like 5s;
+          animation: like 5s;
 }
 
 footer {
