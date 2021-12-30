@@ -73,6 +73,12 @@ body{
     animation: main_page 5s;
 }
 
+/*position du loader centree*/
+.loader-position{
+    position: fixed;
+    top:32%;
+    left: 32%;
+}
 .loader{
     /*crea loader*/
     display: flex;
@@ -87,13 +93,7 @@ body{
     border-bottom: var(--violet) solid 10px;
     border-left: var(--vert) solid 10px;
     border-radius: 50%;
-    /*position*/
-    position: absolute;
-    margin: auto;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    /*animation*/
     animation: loading 3s;
     animation-fill-mode: forwards;
     /*mise en forme texte*/
@@ -108,7 +108,6 @@ body{
     }
 }
 
-
 h2{
     font-weight: bolder;
     font-size:6vw ;
@@ -118,7 +117,6 @@ main a{
     text-decoration: none;
     color: black;
 }
-
 
 .logo__header{
     width: 80%;
