@@ -257,19 +257,19 @@ main .main__title {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 70%;
+  width: 65%;
   margin-left: 10px;
 }
 .dish__desc .dish__name {
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 17px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   margin-bottom: 5px;
 }
 .dish__desc .dish__aside {
-  font-size: 15px;
+  font-size: 14px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -283,7 +283,7 @@ main .main__title {
 }
 
 .dish_anim {
-  width: 25%;
+  width: 18%;
   height: 100px;
   background-color: var(--vert);
   display: flex;
@@ -299,7 +299,7 @@ main .main__title {
   border-radius: 50%;
 }
 .dish_anim .icone_container i {
-  padding: 3vw;
+  padding: 2vw;
   color: #99E2D0;
   -webkit-animation: rotation 2s 0.5s;
           animation: rotation 2s 0.5s;
@@ -353,4 +353,25 @@ footer .footer__menu li {
 }
 footer .footer__menu li i {
   margin-right: 10px;
+}
+
+@media all and (min-width: 768px) {
+  .course__card {
+    height: 140px;
+  }
+
+  .dish__desc .dish__name {
+    font-size: 35px;
+  }
+  .dish__desc .dish__aside {
+    font-size: 28px;
+  }
+
+  .dish__rate {
+    font-size: 28px;
+  }
+
+  .dish_anim {
+    height: 140px;
+  }
 }/*# sourceMappingURL=menu.css.map */

@@ -331,8 +331,11 @@ main a{
         border-radius: 0 0 15px 15px;
         .restaurants__name{
         font-weight: bolder;
-        font-size: 3vw;
+        font-size: 4vw;
         }
+        .restaurants__city{
+            font-size: 3vw;
+            }
     }
 }
 
@@ -362,11 +365,12 @@ main a{
 
 iframe{
     width: 100%;
-    height: 200px;
-    background-color:#282828;
+    height:40vw;
 }
 
 footer{
+    height: 40vw;
+    background-color:#282828;
     padding: 20px 20px;
     color: white;
     a{
@@ -426,10 +430,6 @@ footer{
         }
     }
     .restaurants__details{
-        .restaurants__name{
-        font-weight: bolder;
-        font-size: 4vw;
-        }
         .icone__like{
             font-size: 3vw;
             cursor: pointer;
