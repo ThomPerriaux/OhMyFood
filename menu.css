@@ -10,22 +10,31 @@
   0% {
     width: 0%;
   }
+  50% {
+    width: 18%;
+  }
   100% {
-    width: 25%;
+    width: 0%;
   }
 }
 @keyframes CourseSelection {
   0% {
     width: 0%;
   }
+  50% {
+    width: 18%;
+  }
   100% {
-    width: 25%;
+    width: 0%;
   }
 }
 /*Apparition coche à droite du plat*/
 @-webkit-keyframes rotation {
   0% {
     transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(360deg);
   }
   100% {
     transform: rotate(360deg);
@@ -34,6 +43,9 @@
 @keyframes rotation {
   0% {
     transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(360deg);
   }
   100% {
     transform: rotate(360deg);
@@ -225,7 +237,7 @@ main .main__title {
   box-shadow: #BEC0BD 1px 3px 6px;
   cursor: pointer;
   white-space: nowrap;
-  /*sequence apparition ... lorsque coche apparait*/
+  /*sequence apparition "..." lorsque coche apparait*/
   text-overflow: ellipsis;
   overflow: hidden;
   -webkit-animation: DishScreening 2s;
@@ -286,23 +298,23 @@ main .main__title {
   width: 18%;
   height: 100px;
   background-color: var(--vert);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
   -webkit-animation: CourseSelection 3s;
           animation: CourseSelection 3s;
   display: none;
+  position: relative;
 }
 .dish_anim .icone_container {
+  position: absolute;
+  top: 33%;
+  left: 25%;
   background-color: white;
   border-radius: 50%;
 }
 .dish_anim .icone_container i {
   padding: 2vw;
   color: #99E2D0;
-  -webkit-animation: rotation 2s 0.5s;
-          animation: rotation 2s 0.5s;
+  -webkit-animation: rotation 3s;
+          animation: rotation 3s;
 }
 
 .course__card:hover .dish_anim {
@@ -327,12 +339,6 @@ main .main__title {
 .order_button .explore__order__btn:hover {
   filter: brightness(1.1);
   box-shadow: #3b3b3a 2px 3px 6px;
-}
-
-iframe {
-  width: 100%;
-  height: 200px;
-  background-color: #282828;
 }
 
 footer {
@@ -373,5 +379,16 @@ footer .footer__menu li i {
 
   .dish_anim {
     height: 140px;
+  }
+
+  .logo__footer {
+    text-align: center;
+    font-size: 4vw;
+    margin-bottom: 20px;
+  }
+
+  .footer__menu {
+    text-align: center;
+    font-size: 2vw;
   }
 }/*# sourceMappingURL=menu.css.map */
