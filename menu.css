@@ -112,13 +112,6 @@
     opacity: 1;
   }
 }
-/*variables couleurs*/
-:root {
-  --violet:#9356DC;
-  --rose:#FF79DA;
-  --vert:#99E2D0;
-}
-
 body {
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
 }

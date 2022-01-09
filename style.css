@@ -118,13 +118,7 @@
     scale: 1;
   }
 }
-/*var*/
-:root {
-  --violet:#9356DC;
-  --rose:#FF79DA;
-  --vert:#99E2D0;
-}
-
+/*variables couleurs*/
 body {
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -151,10 +145,10 @@ body {
   width: 35vw;
   height: 35vw;
   /*arrondi*/
-  border-top: var(--violet) solid 10px;
-  border-right: var(--vert) solid 10px;
-  border-bottom: var(--violet) solid 10px;
-  border-left: var(--vert) solid 10px;
+  border-top: #9356DC solid 10px;
+  border-right: #99E2D0 solid 10px;
+  border-bottom: #9356DC solid 10px;
+  border-left: #99E2D0 solid 10px;
   border-radius: 50%;
   /*animation*/
   -webkit-animation: loading 3s;
@@ -231,7 +225,7 @@ main a {
   width: 55%;
   height: 10vw;
   margin: 0 auto 70px auto;
-  background: linear-gradient(var(--rose), var(--violet));
+  background: linear-gradient #FF79DA, #9356DC;
   color: ivory;
   border: none;
   border-radius: 5vw;
@@ -269,13 +263,13 @@ main a {
   background-color: #F3E8FF;
 }
 .fonctionnement .fonctionnement__btn:hover i {
-  color: var(--violet);
+  color: #9356DC;
 }
 .fonctionnement .fonctionnement__btn__step {
   width: 7vw;
   height: 7vw;
-  border: var(--violet) solid 1px;
-  background-color: var(--violet);
+  border: #9356DC solid 1px;
+  background-color: #9356DC;
   border-radius: 50%;
   position: absolute;
   left: -20px;
@@ -352,7 +346,7 @@ main a {
 }
 .restaurants .restaurants__pic p {
   position: absolute;
-  background-color: var(--vert);
+  background-color: #99E2D0;
   color: #0E7753;
   top: 10px;
   right: 10px;
@@ -384,7 +378,7 @@ main a {
 }
 .icone__like .like {
   z-index: -1;
-  color: var(--rose);
+  color: #FF79DA;
   opacity: 0;
   scale: 0;
 }
