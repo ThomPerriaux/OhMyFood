@@ -291,8 +291,8 @@ main .main__title {
   width: 18%;
   height: 100px;
   background-color: #99E2D0;
-  -webkit-animation: CourseSelection 3s;
-          animation: CourseSelection 3s;
+  -webkit-animation: CourseSelection 3s ease-in-out;
+          animation: CourseSelection 3s ease-in-out;
   display: none;
   position: relative;
 }

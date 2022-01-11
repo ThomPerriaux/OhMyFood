@@ -244,7 +244,7 @@ main{
     width: 18%;
     height: 100px;
     background-color: $vert;
-    animation: CourseSelection 3s;
+    animation: CourseSelection 3s ease-in-out;
     display: none;
     position: relative;
         .icone_container{
@@ -264,6 +264,7 @@ main{
     .course__card:hover{
         .dish_anim{
             display: inherit;
+            
         }
     }
 
