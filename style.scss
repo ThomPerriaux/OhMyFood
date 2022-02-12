@@ -21,7 +21,6 @@
         transform:rotate(0deg);
     }
 
-
     75%{
         opacity: 1;
         transform:rotate(360deg);
@@ -77,12 +76,10 @@
     
 }
 
-
 /*variables couleurs*/
-
-$violet:#9356DC;
-$rose:#FF79DA;
-$vert:#99E2D0;
+$color-primary:#9356DC;
+$color-secondary:#FF79DA;
+$color-tertiary:#99E2D0;
 
 body{
     font-family: 'Roboto',Verdana, Geneva, Tahoma, sans-serif;
@@ -94,12 +91,12 @@ body{
 }
 
 /*position du loader centree*/
-.loader-position{
+.loader-spinner{
     position: fixed;
     top:32%;
     left: 32%;
 }
-.loader{
+.loader-spinner-element{
     /*crea loader*/
     display: flex;
     flex-direction: column;
@@ -108,10 +105,10 @@ body{
     width: 35vw;
     height: 35vw;
     /*arrondi*/
-    border-top: $violet solid 10px;
-    border-right: $vert solid 10px;
-    border-bottom: $violet solid 10px;
-    border-left: $vert solid 10px;
+    border-top: $color-primary solid 10px;
+    border-right: $color-tertiary solid 10px;
+    border-bottom: $color-primary solid 10px;
+    border-left: $color-tertiary solid 10px;
     border-radius: 50%;
     /*animation*/
     animation: loading 3s;
@@ -187,19 +184,19 @@ main a{
         width: 55%;
         height: 10vw;
         margin: 0 auto 70px auto;
-        background: linear-gradient($rose,$violet);
+        background: linear-gradient($color-secondary,$color-primary);
         color: ivory;
         border: none;
         border-radius: 5vw;
         font-size: 3.5vw;
         box-shadow: #BEC0BD 0vw 1.5vw 1.5vw;
         cursor: pointer;
-    }
-
-    .explore__order__btn:hover{
+        
+    &:hover{
         filter: brightness(1.10);
         box-shadow:#3b3b3a 2px 3px 6px;
-    }
+        }
+    }   
 }
 
 .fonctionnement
@@ -222,20 +219,21 @@ main a{
         justify-content: space-around;
         position: relative;
         box-shadow: #BEC0BD 1px 3px 6px;
-    }
-    .fonctionnement__btn:hover
-    {
-        background-color: #F3E8FF;
-        i{
-        color: $violet;
+
+        &:hover{
+            background-color: #F3E8FF;
+            i{
+            color: $color-primary;
+            }
         }
     }
+    
 
     .fonctionnement__btn__step{
         width: 7vw;
         height: 7vw;
-        border: $violet solid 1px;
-        background-color: $violet;
+        border: $color-primary solid 1px;
+        background-color: $color-primary;
         border-radius: 50%;
         position: absolute;
         left: -20px;
@@ -311,7 +309,7 @@ main a{
         }
         p{
             position: absolute;
-            background-color: $vert;
+            background-color: $color-tertiary;
             color: #0E7753;
             top: 10px;
             right: 10px;
@@ -346,7 +344,7 @@ main a{
     }
      .like{
     z-index: -1;
-    color: $rose;
+    color: $color-secondary;
     opacity: 0;
     scale: 0;
     }

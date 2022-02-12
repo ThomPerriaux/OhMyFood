@@ -130,13 +130,13 @@ body {
 }
 
 /*position du loader centree*/
-.loader-position {
+.loader-spinner {
   position: fixed;
   top: 32%;
   left: 32%;
 }
 
-.loader {
+.loader-spinner-element {
   /*crea loader*/
   display: flex;
   flex-direction: column;
@@ -158,12 +158,12 @@ body {
   /*mise en forme texte*/
   /*mise en forme icone*/
 }
-.loader p {
+.loader-spinner-element p {
   font-size: 5.5vw;
   text-align: center;
   font-family: "Shrikhand", Verdana, Geneva, Tahoma, sans-serif;
 }
-.loader i {
+.loader-spinner-element i {
   font-size: 7vw;
 }
 

@@ -5,9 +5,9 @@
 /*MiniReset*/
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 
-$violet:#9356DC;
-$rose:#FF79DA;
-$vert:#99E2D0;
+$color-primary:#9356DC;
+$color-secondary:#FF79DA;
+$color-tertiary:#99E2D0;
 
 /*Apparition coche à droite du plat*/
 @keyframes CourseSelection {
@@ -67,8 +67,7 @@ $vert:#99E2D0;
     }
     100%{
         opacity: 1;
-    }
-    
+    }   
 }
 
 body{
@@ -145,7 +144,7 @@ main{
     }
      .like{
     z-index: -1;
-    color: $rose;
+    color: $color-secondary;
     opacity: 0;
     scale: 0;
     }
@@ -161,7 +160,6 @@ main{
     }
 }
 
-
 .course{
     width: 95%;
     margin: auto;
@@ -171,7 +169,7 @@ main{
         margin-top: 40px;
     }
     .course__title__underline{ /*trait vert sous la catégorie du plat*/
-        border-bottom: 5px solid $vert;
+        border-bottom: 5px solid $color-tertiary;
         width: 10%;
         margin-bottom: 10px;
     }
@@ -192,7 +190,7 @@ main{
     white-space: nowrap; /*sequence apparition "..." lorsque coche apparait*/
     text-overflow: ellipsis;
     overflow: hidden;
-    animation: DishScreening 2s;
+    animation: DishScreening 2s ;
 }
 
 .course__card__plats{
@@ -244,8 +242,8 @@ main{
     .dish_anim{
     width: 18%;
     height: 100px;
-    background-color: $vert;
-    animation: CourseSelection 3s ease-in-out;
+    background-color: $color-tertiary;
+    animation: CourseSelection 3s ;
     display: none;
     position: relative;
         .icone_container{
@@ -253,7 +251,7 @@ main{
         top:33%;
         left: 25%;
         background-color: white;
-        border-radius: 50%;        
+        border-radius: 50%;
             i{
             padding:2vw;
             color: #99E2D0;
@@ -265,7 +263,6 @@ main{
     .course__card:hover{
         .dish_anim{
             display: inherit;
-            
         }
     }
 
@@ -276,7 +273,7 @@ text-align: center;
         width: 55%;
         height: 50px;
         margin: 40px auto;
-        background: linear-gradient($rose, $violet);
+        background: linear-gradient($color-secondary, $color-primary);
         color: ivory;
         border: none;
         border-radius: 25px;
@@ -332,8 +329,15 @@ footer{
     font-size: 28px;
         }
 
+
+
 .dish_anim{
     height: 140px;
+        .icone_container{
+            i{
+            padding:3vw;
+            }
+        }
     }
 
 
