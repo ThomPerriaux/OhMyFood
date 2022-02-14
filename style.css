@@ -156,7 +156,7 @@ body {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   /*mise en forme texte*/
-  /*mise en forme icone*/
+  /*mise en forme icones*/
 }
 .loader-spinner-element p {
   font-size: 5.5vw;

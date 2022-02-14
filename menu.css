@@ -288,12 +288,9 @@ main .main__title {
 }
 
 .dish_anim {
-  width: 18%;
+  width: 0%;
   height: 100px;
   background-color: #99E2D0;
-  -webkit-animation: CourseSelection 3s;
-          animation: CourseSelection 3s;
-  display: none;
   position: relative;
 }
 .dish_anim .icone_container {
@@ -306,12 +303,15 @@ main .main__title {
 .dish_anim .icone_container i {
   padding: 2vw;
   color: #99E2D0;
-  -webkit-animation: rotation 3s;
-          animation: rotation 3s;
 }
 
 .course__card:hover .dish_anim {
-  display: inherit;
+  -webkit-animation: CourseSelection 3s;
+          animation: CourseSelection 3s;
+}
+.course__card:hover i {
+  -webkit-animation: rotation 3s;
+          animation: rotation 3s;
 }
 
 .order_button {
@@ -372,9 +372,15 @@ footer .footer__menu li i {
 
   .dish_anim {
     height: 140px;
+    position: relative;
+  }
+  .dish_anim .icone_container {
+    top: 15%;
+    left: 25%;
   }
   .dish_anim .icone_container i {
     padding: 3vw;
+    font-size: 28px;
   }
 
   .logo__footer {
