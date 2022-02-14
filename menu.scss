@@ -240,11 +240,9 @@ main{
         }
 
     .dish_anim{
-    width: 18%;
+    width: 0%;
     height: 100px;
     background-color: $color-tertiary;
-    animation: CourseSelection 3s ;
-    display: none;
     position: relative;
         .icone_container{
         position: absolute;
@@ -254,15 +252,17 @@ main{
         border-radius: 50%;
             i{
             padding:2vw;
-            color: #99E2D0;
-            animation: rotation 3s;
+            color: $color-tertiary;
             }
         }
     }
 
     .course__card:hover{
         .dish_anim{
-            display: inherit;
+            animation: CourseSelection 3s;
+        }
+        i{
+            animation: rotation 3s;
         }
     }
 
@@ -330,12 +330,15 @@ footer{
         }
 
 
-
 .dish_anim{
     height: 140px;
+    position: relative;
         .icone_container{
+        top:15%;
+        left: 25%;
             i{
             padding:3vw;
+            font-size: 28px;
             }
         }
     }

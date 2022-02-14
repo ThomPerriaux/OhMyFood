@@ -45,7 +45,6 @@
         opacity: 0;
     }
 
-
     75%{
         opacity: 1;
     }
@@ -84,6 +83,7 @@ $color-tertiary:#99E2D0;
 body{
     font-family: 'Roboto',Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .main_page
 {    
     opacity: 1;
@@ -119,7 +119,7 @@ body{
         text-align: center;
         font-family: 'Shrikhand',Verdana, Geneva, Tahoma, sans-serif;
     }
-    /*mise en forme icone*/
+    /*mise en forme icones*/
     i{
         font-size: 7vw;
     }
