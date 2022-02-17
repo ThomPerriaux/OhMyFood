@@ -61,6 +61,9 @@
     opacity: 0;
     transform: translateY(60px);
   }
+  50% {
+    opacity: 0.5;
+  }
   100% {
     opacity: 1;
   }
@@ -73,6 +76,9 @@
   10% {
     opacity: 0;
     transform: translateY(60px);
+  }
+  50% {
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
@@ -233,20 +239,23 @@ main .main__title {
   /*sequence apparition "..." lorsque coche apparait*/
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+.course__card__entrees {
   -webkit-animation: DishScreening 2s;
           animation: DishScreening 2s;
 }
 
 .course__card__plats {
   /*keyframes apparitions plats*/
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  -webkit-animation: DishScreening 2s 400ms;
+          animation: DishScreening 2s 400ms;
 }
 
 .course__card__desserts {
   /*keyframes apparitions plats*/
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  -webkit-animation: DishScreening 2s 600ms;
+          animation: DishScreening 2s 600ms;
 }
 
 .dish__displayed {
