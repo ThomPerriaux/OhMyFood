@@ -22,7 +22,7 @@ $color-tertiary:#99E2D0;
     }
 }
 
-/*Apparition coche à droite du plat*/
+/*rotation dans la coche*/
 @keyframes rotation {
     0%{
         transform: rotate(180deg);
@@ -228,9 +228,6 @@ main{
         .dish__name{
             font-weight: bolder;
             font-size:17px;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
             margin-bottom: 5px;
         }
         .dish__aside{

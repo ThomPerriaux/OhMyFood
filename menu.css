@@ -28,7 +28,7 @@
     width: 0%;
   }
 }
-/*Apparition coche à droite du plat*/
+/*rotation dans la coche*/
 @-webkit-keyframes rotation {
   0% {
     transform: rotate(180deg);
@@ -277,9 +277,6 @@ main .main__title {
 .dish__desc .dish__name {
   font-weight: bolder;
   font-size: 17px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
   margin-bottom: 5px;
 }
 .dish__desc .dish__aside {
