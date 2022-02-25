@@ -328,13 +328,13 @@ main .main__title {
 }
 .order_button .explore__order__btn {
   width: 55%;
-  height: 50px;
+  height: 10vw;
   margin: 40px auto;
   background: linear-gradient(#FF79DA, #9356DC);
   color: ivory;
   border: none;
   border-radius: 25px;
-  font-size: 3.5vw;
+  font-size: 5.5vw;
   box-shadow: #BEC0BD 1px 3px 6px;
   cursor: pointer;
 }
