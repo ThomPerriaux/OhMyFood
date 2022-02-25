@@ -55,6 +55,7 @@ $color-tertiary:#99E2D0;
     }
 }
 
+/*neutral is Empty Heart *** Like is Full Heart*/
 @keyframes neutral {
     0%{
         opacity: 1;
@@ -88,7 +89,7 @@ main a{
 }
  
 a:visited{
-    color: inherit; /*inherit from parent*/
+    color: inherit; /*inherit from parent -- no color changing when visited*/
 }
 
 header{
@@ -113,7 +114,7 @@ header{
 
 .restaurant_picture{
    width: 100%;
-   z-index: -1; /*positionner en arriere plan du main*/
+   z-index: -1; /*photo du restau en arriere plan*/
    position: relative;
     img{
     object-fit: cover;
@@ -140,6 +141,7 @@ main{
     }
 }
 
+/*heart like/notliked*/
 .icone__like{
     .neutral{
         position: absolute;
@@ -262,6 +264,7 @@ main{
         }
     }
 
+    /*apparition de la coche a droite & rotation de l'icone déclenchées au hover*/
     .course__card:hover{
         .dish_anim{
             animation: CourseSelection 3s;

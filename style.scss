@@ -5,6 +5,7 @@
 /*MiniReset*/
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 
+/*sequence loading spinner */
 @keyframes loading {
     0%{
         opacity: 1;
@@ -32,6 +33,7 @@
     }
 }
 
+/*apparition progressive de la page et disparition progressive du loading spinner*/
 @keyframes main_page {
         0%{
         opacity: 0;
@@ -54,6 +56,7 @@
     }
 }
 
+/*coeur plein coeur vide*/
 @keyframes neutral {
     0%{
         opacity: 1;
@@ -302,6 +305,7 @@ main a{
         object-fit: cover;
         position: relative;
         }
+        /*banniere NOUVEAU*/
         .banner__new{
             width: 16vw;
             height: 6vw;
@@ -350,6 +354,7 @@ main a{
     }
 }
 
+/*sequence coeur vide coeur plein*/
 .icone__like:hover{
     .neutral{
     opacity: 0;

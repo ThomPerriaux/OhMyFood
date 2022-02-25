@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 /*MiniReset*/
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+/*sequence loading spinner */
 @-webkit-keyframes loading {
   0% {
     opacity: 1;
@@ -48,6 +49,7 @@
     opacity: 0;
   }
 }
+/*apparition progressive de la page et disparition progressive du loading spinner*/
 @-webkit-keyframes main_page {
   0% {
     opacity: 0;
@@ -82,6 +84,7 @@
     opacity: 1;
   }
 }
+/*coeur plein coeur vide*/
 @-webkit-keyframes neutral {
   0% {
     opacity: 1;
@@ -330,6 +333,7 @@ main a {
   position: relative;
   background-color: white;
   border-radius: 15px 15px 0 0;
+  /*banniere NOUVEAU*/
 }
 .restaurants .restaurants__pic .restaurants__image {
   border-radius: 15px 15px 0 0;
@@ -383,6 +387,7 @@ main a {
   scale: 0;
 }
 
+/*sequence coeur vide coeur plein*/
 .icone__like:hover .neutral {
   opacity: 0;
   -webkit-animation: neutral 1s forwards;

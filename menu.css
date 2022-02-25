@@ -84,6 +84,7 @@
     opacity: 1;
   }
 }
+/*neutral is Empty Heart *** Like is Full Heart*/
 @-webkit-keyframes neutral {
   0% {
     opacity: 1;
@@ -133,7 +134,7 @@ main a {
 
 a:visited {
   color: inherit;
-  /*inherit from parent*/
+  /*inherit from parent -- no color changing when visited*/
 }
 
 header {
@@ -158,7 +159,7 @@ header .logo__header {
 .restaurant_picture {
   width: 100%;
   z-index: -1;
-  /*positionner en arriere plan du main*/
+  /*photo du restau en arriere plan*/
   position: relative;
 }
 .restaurant_picture img {
@@ -186,6 +187,7 @@ main .main__title {
   align-items: center;
 }
 
+/*heart like/notliked*/
 .icone__like .neutral {
   position: absolute;
   opacity: 1;
@@ -311,6 +313,7 @@ main .main__title {
   color: #99E2D0;
 }
 
+/*apparition de la coche a droite & rotation de l'icone déclenchées au hover*/
 .course__card:hover .dish_anim {
   -webkit-animation: CourseSelection 3s;
           animation: CourseSelection 3s;
