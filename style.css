@@ -88,37 +88,41 @@
 @-webkit-keyframes neutral {
   0% {
     opacity: 1;
+    transform: scale(1);
   }
   100% {
     opacity: 0;
-    scale: 0;
+    transform: scale(0);
   }
 }
 @keyframes neutral {
   0% {
     opacity: 1;
+    transform: scale(1);
   }
   100% {
     opacity: 0;
-    scale: 0;
+    transform: scale(0);
   }
 }
 @-webkit-keyframes like {
   0% {
     opacity: 0;
+    transform: scale(0);
   }
   100% {
     opacity: 1;
-    scale: 1;
+    transform: scale(1);
   }
 }
 @keyframes like {
   0% {
     opacity: 0;
+    transform: scale(0);
   }
   100% {
     opacity: 1;
-    scale: 1;
+    transform: scale(1);
   }
 }
 /*variables couleurs*/
@@ -378,13 +382,11 @@ main a {
 .icone__like .neutral {
   position: absolute;
   opacity: 1;
-  scale: 1;
 }
 .icone__like .like {
   z-index: -1;
   color: #FF79DA;
   opacity: 0;
-  scale: 0;
 }
 
 /*sequence coeur vide coeur plein*/

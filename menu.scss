@@ -62,7 +62,7 @@ $color-tertiary:#99E2D0;
     }
     100%{
         opacity: 0;
-        scale: 0;
+        transform: scale(0);
     }
 }
 
@@ -146,13 +146,11 @@ main{
     .neutral{
         position: absolute;
         opacity: 1;
-        scale: 1;
     }
      .like{
     z-index: -1;
     color: $color-secondary;
     opacity: 0;
-    scale: 0;
     }
 }
 
@@ -162,7 +160,7 @@ main{
     }
 
     .like{
-        animation: like 3s forwards;
+    animation: like 3s forwards;
     }
 }
 
